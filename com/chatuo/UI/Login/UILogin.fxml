@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatuo.UI.Login.UILoginController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="709.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@resources/background.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="292.0" layoutY="223.0">
+               <children>
+                  <JFXTextField fx:id="username" focusColor="#29cc4a" layoutX="10.0" layoutY="31.0" style="-fx-text-inner-color: #DDDDDD;" unFocusColor="WHITE" />
+                  <JFXPasswordField fx:id="password" focusColor="#29cc4a" layoutX="10.0" layoutY="83.0" unFocusColor="WHITE" />
+                  <Label layoutX="10.0" layoutY="66.0" text="Senha:" textFill="WHITE" />
+                  <JFXButton alignment="CENTER" buttonType="RAISED" cancelButton="true" layoutX="10.0" layoutY="115.0" onAction="#loginClick" prefHeight="31.0" prefWidth="135.0" ripplerFill="#37b540" style="-jfx-button-type: FLAT; -fx-background-color: #51751450;" text="ENTRAR" textFill="#90cc29">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" text="Login:" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="14.0" onAction="#exitButtonAction" prefHeight="31.0" prefWidth="35.0" ripplerFill="WHITE" style="-fx-background-color: #FF000040;" text="X" textFill="RED">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="208.0" fitWidth="390.0" layoutX="184.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
